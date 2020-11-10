@@ -7,3 +7,6 @@ function loadDoc(url,callback) {
 callback(xhttp.responseText);
 
 }
+function showmsg(m){
+  alert("parece que si se pudo" + m)
+}
