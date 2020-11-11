@@ -8,10 +8,8 @@ callback(xhttp.responseText);
 
 }
 function showmsg(m){
-  alert("parece que si se pudo" + m)
+  alert("parece que si se pudo" + m);
 }
-       function getPos(callback){
-             navigator.geolocation.getCurrentPosition((position) => {
-               callback({latitud: position.coords.latitude,longitud: position.coords.longitude});
-}
-}
+
+function getPos(callback){  navigator.geolocation.getCurrentPosition((position) => { callback({latitud: position.coords.latitude,longitud: position.coords.longitude}); }}
+                                                                           
