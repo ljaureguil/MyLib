@@ -8,6 +8,17 @@
       })
   }                                     
 
+
+
+    function toRad(x) {
+        return x * Math.PI / 180;
+    }
+
+    function toDegrees(radians) {
+        return radians * 180 / Math.PI;
+    }
+
+
    function harversin(p1, p2) { 
         // good
   /*      
