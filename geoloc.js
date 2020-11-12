@@ -8,8 +8,6 @@
       })
   }                                     
 
-
-
     function toRad(x) {
         return x * Math.PI / 180;
     }
@@ -21,16 +19,6 @@
 
    function harversin(p1, p2) { 
         // good
-  /*      
-        if(!di){
-            var pp={};
-            pp.a=p2.latitud;pp.b=p2.longitud;
-            p2.latitud=p1.latitud;
-            p2.longitud=p1.longitud;
-            p1.latitud=pp.a;
-            p1.longitud=pp.b;
-        }
-    */    
         var R = 6378137;
         var dLat = toRad(p2.latitud * 1 - p1.latitud * 1); ///alert(dlat);
         var dLon = toRad(p1.longitud * 1 - p2.longitud * 1); //alert(dlon);
@@ -68,13 +56,10 @@
             meters:dm,
             miles:d,
             feet:df,
-            azimuth:bearing
+            azimuth:bearing,
+            from:p1,
+            to:p2
          }
          return ro;
-
-        /////////////
-    //    eres.innerHTML = "Dist in m =" + dm + "<br>Dist in miles =" + d + "<br>Dist in ft =" + df + "<br>Bearing or azimuth= " + bearing;
-
-
     }
 
