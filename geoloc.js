@@ -47,7 +47,7 @@
         // convert to miles
         d = d / 1.60934;
         d = d / 1000;
-        df = 5280 * d;
+        var df = 5280 * d;
         df=df.toFixed(4);
         d=d.toFixed(4);
         ////////
