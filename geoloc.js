@@ -8,6 +8,16 @@
       })
   }                                     
 
+   function getPosDir() {
+      navigator.geolocation.getCurrentPosition((position) => {
+          var ob = {
+              latitud: position.coords.latitude,
+              longitud: position.coords.longitude
+          };
+         return ob;
+      })
+  }                            
+
     function toRad(x) {
         return x * Math.PI / 180;
     }
