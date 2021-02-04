@@ -7,7 +7,15 @@
           callback(ob)
       })
   }                                     
-
+  function getLoc(callback) {
+      navigator.geolocation.getCurrentPosition((position) => {
+          var ob = {
+              latitude: position.coords.latitude,
+              longitude: position.coords.longitude
+          };
+          callback(ob)
+      })
+  }                    
    function getPosDir() {
       navigator.geolocation.getCurrentPosition((position) => {
           var ob = {
